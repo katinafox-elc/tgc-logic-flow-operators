@@ -10,7 +10,28 @@ age = int(input("What is your age? "))
 
 #Step 3: Create an if statement that matches for their responses. You may need multiple if/elif statements. 
     # Use the logic flow diagram to help you
-
+if height >=60:
+    print("You can ride the rollercoaster!")
+    if age<12: 
+        print("Please pay $5.")
+        bill = 5
+    elif age <=18:
+        print("Please pay $7.")
+        bill = 7
+    else: 
+        print("Please pay $12.")
+        bill = 12   
+    photo=input("Do you want a photo? Yes or No: ")
+    if photo=="yes":
+        print("Photos are $3 extra.")
+        bill = bill+3
+        bill=str(bill)
+        print("Your final bill is $"+bill+".")
+    else:
+        bill=str(bill)
+        print("Your final bill is $"+bill+".")    
+else:
+    print("Sorry, you cannot ride the rollercoaster.")
 
 
 # Step 4: Ask the user if they want a photo.
